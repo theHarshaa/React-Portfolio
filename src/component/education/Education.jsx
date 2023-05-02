@@ -46,7 +46,7 @@ const Education = () => {
 
                                 <div className="qualification_calender">
                                 <i class="uil uil-calendar-alt"></i>
-                                    2021-Present
+                                    2021-2023
                                 </div>
                             </div>
 
