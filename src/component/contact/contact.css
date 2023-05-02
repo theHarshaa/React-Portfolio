@@ -1,0 +1,150 @@
+.contact_container {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    column-gap: 6rem;
+    padding-bottom: 3rem;
+}
+
+.contact_title{
+    text-align: center;
+    font-size: var(--h3-font-size);
+    font-weight: var(--font_medium);
+    margin-bottom: var(--mb-1-5);
+}
+
+.contact_info{
+    display: grid;
+    row-gap: 1rem;
+    grid-template-columns: 300px;
+}
+
+.contact_card{
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    text-align: center;
+}
+
+.contact_card-icon{
+    font-size: 2rem;
+    color: var(--title-color);
+    margin-bottom: var(--mb-0-25);
+}
+
+.contact_card-title,
+.contact_card-data{
+    font-size: var(--small-font-size);
+}
+
+.contact_card-title{
+    font-weight: var(--font_medium);
+}
+
+.contact_card-data{
+    display: block;
+    margin-bottom: var(--mb-0-75);
+}
+
+.contact_button{
+    color: var(--text-color);
+    font-size: var(--small-font-size);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.25rem;
+}
+
+.contact_button-icon {
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.contact_button:hover .contact_button-icon {
+    transform: translateX(0.25rem);
+}
+
+.contact_form {
+    width: 360px;
+}
+
+.contact_form-div {
+    position: relative;
+    margin-bottom: var(--mb-2);
+    height: 4rem;
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+}
+
+.contact_form-input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 2px solid var(--border);
+    background: none;
+    color: var(--text-color);
+    outline: none;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    z-index: 1;
+}
+
+.contact_form-tag{
+    position: absolute;
+    top: -0.75rem;
+    left: 1.25rem;
+    font-size: var(--smaller-font-size);
+    padding: 0.25rem;
+    background-color: var(--body-color);
+    z-index: 10;
+}
+
+.contact_form-area{
+    height: 11rem;
+}
+
+.contact_form-area textarea {
+    resize: none;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .contact_container{
+        column-gap: 3rem;
+    }
+}
+  
+  /* For medium devices */
+  @media screen and (max-width: 768px) {
+    .contact_container{
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+
+    .contact_info{
+        justify-content: center
+    }
+
+    .contact_form{
+        margin: 0 auto;
+    }
+}
+  
+  @media screen and (max-width: 576px) {
+    .contact_info{
+        grid-template-columns: 1fr;
+    }
+
+    .contact_form{
+        width: 100%;
+    }
+}
+  
+  /* For small devices */
+  @media screen and (max-width: 350px) {
+
+}
+  
