@@ -8,7 +8,7 @@ const Social = () => {
             <a href="https://www.facebook.com/harsh.singh.52687506" className="home_social-icon" target="_blank">
             <i class="uil uil-facebook"></i>
             </a>
-            <a href="https://www.instagram.com/the.harshaa/" className="home_social-icon" target="_blank">
+            <a href="https://www.instagram.com/the__.__harsh/" className="home_social-icon" target="_blank">
             <i class="uil uil-instagram-alt"></i>
             </a>
             <a href="https://github.com/harshaa11th" className="home_social-icon" target="_blank">
