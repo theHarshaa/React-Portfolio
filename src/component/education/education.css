@@ -1,0 +1,139 @@
+.qualification_container{
+    max-width: 768px;
+    padding-bottom: 50px;
+}
+.qualification_sections {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-radius: 1.5rem;
+    background-color: var(--container-color);
+}
+.qualification_tabs{
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--mb-2);
+}
+
+.qualification_button {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    color: var(--title-color);
+    margin: 0 var(--mb-1);
+    cursor:pointer;
+}
+
+.qualification_button:hover {
+    color: var(--title-color-dark);
+}
+
+.qualification_icon {
+    font-size: 1.8rem;
+    margin-right: var(--mb-0-25);
+}
+
+.qualification_sections {
+    display: grid;
+    grid-template-columns: 0.5fr;
+    justify-content: center;
+}
+
+.qualification_content {
+    display: none;
+}
+
+.qualification_content-active {
+    display: block;
+}
+
+.qualification_data {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 0.2rem;
+}
+
+.qualification_title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.qualification_subtitle {
+    display: inline-block;
+    font-size: var(--tiny-font-size);
+    margin-bottom: var(--mb-1);
+    font-weight: bolder;
+}
+
+.qualification_calender{
+    font-size: var(--small-font-size);
+}
+
+.qualification_rounder {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: var(--text-color);
+    border-radius: 50%;
+}
+
+.qualification_line {
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--text-color);
+    transform: translate(6px, -7px);
+}
+.experience_title{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .qualification_container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+  /* For medium devices */
+@media screen and (max-width: 750px) {
+    .qualification_container{
+        margin-left: var(--mb-1-5);
+        margin-right: var(--mb-1-5);
+    }
+
+
+}
+
+@media screen and (max-width: 617px) {
+    .qualification_sections{
+        grid-template-columns: initial;
+    }
+
+    .qualification_button{
+        margin: 0 var(--mb-0-75);
+    }
+}
+  
+  /* For small devices */
+  @media screen and (max-width: 339px) {
+    .qualification_sections{
+        grid-template-columns: initial;
+    }
+
+    .qualification_line,
+    .qualification_rounder{
+        display: none;
+    }
+    .qualification_data{
+        gap: 0.5rem;
+        grid-template-columns: max-content;
+        padding-bottom: 1.2rem;
+    }
+
+    .special{
+        display: none;
+    }
+}

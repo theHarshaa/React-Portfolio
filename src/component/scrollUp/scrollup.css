@@ -1,0 +1,50 @@
+.scrollUp {
+    position: fixed;
+    right: 2.5rem;
+    bottom: 3rem;
+    background-color: var(--title-color);
+    opacity: 0.8;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.4rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+}
+
+.scrollUp_icon{
+    font-size: 1rem;
+    color: var(--container-color);
+}
+
+.scrollUp:hover {
+    background-color: var(--title-color-dark);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .scrollUp{
+        right: 1.5rem;
+        padding: 0.25rem 0.4rem;
+    }
+
+    .scrollUp_icon{
+        font-size: 1.25rem;
+    }
+}
+  
+  /* For medium devices */
+  @media screen and (max-width: 768px) {
+    .scrollUp{
+        right: 3rem;
+        bottom: 4rem;
+    }
+}
+
+  
+  /* For small devices */
+  @media screen and (max-width: 350px) {
+    .scrollUp{
+        right: 1rem;
+    }
+}
+  
